@@ -1,5 +1,6 @@
 import cv2
 import numpy as  np
+
 img=cv2.imread(r'D:/github/Personal-TestDemo/openCV/testInputData/1.png',1) #读取图片
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY) #将图片变为灰度图片
 gray[gray<0.3*255] = 0
